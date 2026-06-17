@@ -78,8 +78,13 @@ a {
 @media screen and (max-width: 400px) {
   .left-inner,
   .right-inner {
-    padding: 40px;
+    padding: 50px 16px;
   }
+
+  .right .introduction {
+    margin-top: 40px;
+  }
+  
 }
 
 .left-inner {
@@ -138,10 +143,115 @@ a {
     position: static;
     margin-left: 0;
   }
+  .left {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 24px;
+    background: #1a1a1a;
+  }
+  .left .bg-img {
+    position: relative;
+    width: 176px;
+    height: 176px;
+    min-width: 176px;
+    border-radius: 50%;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    background-size: 200%;
+    background-position: 35% 65%;
+  }
+  .left .bg-img:before {
+    border-radius: 50%;
+    opacity: 0;
+  }
+  .left-inner {
+    height: auto;
+    min-height: 0;
+    padding: 0 0 0 20px;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .left .info {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    margin: 0;
+  }
+  .left .info .name {
+    margin-top: 0;
+    font-size: 26px;
+    margin-bottom: 6px;
+  }
+  .left .info .social-links {
+    margin-top: 6px;
+  }
   .right-panel {
     border-left: none;
     border-top: 1px solid #eeeeee;
     height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left {
+    padding: 16px 20px;
+  }
+
+  .left .bg-img {
+    width: 140px;
+    height: 140px;
+    min-width: 140px;
+  }
+
+  .left .info .name {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  .left-inner,
+  .right-inner {
+    padding: 50px 20px;
+    padding-top: 80px;
+  }
+
+  .right-panel-inner {
+    padding: 40px 20px;
+    padding-top: 80px;
+  }
+
+  .right .introduction {
+    margin-top: 40px;
+  }
+
+  .right .experience .exp-item .job {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .right .experience .exp-item .duration {
+    white-space: normal;
+  }
+
+  .right .education .edu-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .right .education .edu-date {
+    white-space: normal;
+    margin-left: 0;
   }
 }
 
@@ -209,6 +319,9 @@ a {
 }
 
 /* ── Introduction ────────────────────────────────────────── */
+.right .introduction {
+  margin-top: 20px;
+}
 
 .right .intro-p {
   text-align: justify;
@@ -239,7 +352,9 @@ a {
 .right .research-topics .content {
   position: relative;
   padding-left: 24px;
+  padding-right: 16px;
   border-left: 2px solid #e8e8e8;
+  box-sizing: border-box;
 }
 
 .right .research-topics .research-item {
