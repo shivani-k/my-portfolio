@@ -48,7 +48,7 @@ a {
 }
 
 .left .bg-img {
-  background: url('../resources/ShivaniKalamadi_PortfolioPic.png') center center no-repeat;
+  background: url('../resources/ShivaniKalamadi_PortfolioPic.png') 35% center no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
