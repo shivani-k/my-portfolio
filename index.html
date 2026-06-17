@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Portfolio | Shivani Kalamadi</title>
+  <title>Shivani Kalamadi</title>
   <meta charset="UTF-8">
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Shivani Kalamadi | Software Engineer | Cloud Consultant</title>
-  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./resources/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:200,300,400,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -19,8 +18,8 @@
       <div class="left-inner">
         <div class="info">
           <h2 class="name">Hey, I'm Shivani</h2>
-          <div class="subtext">Software Developer & Technical Consultant</div>
-          <div class="jobStatus">Master's in Computer Science @ UC Davis</div>
+          <div class="subtext">PhD student in Computer Science</div>
+          <div class="jobStatus"> University of California Davis</div>
           <div class="social-links">
             <a href="https://www.linkedin.com/in/shivanikalamadi/" target="_blank"><i class="fa fa-linkedin"></i></a>
             <a href="https://github.com/shivani-k" target="_blank"><i class="fa fa-github"></i></a>
@@ -32,139 +31,195 @@
     <div class="right">
       <div class="right-inner">
         <div class="introduction">
-          <h4>Intro</h4>
+          <h4>Introduction</h4>
           <div class="content">
-            <p class="intro-p">I'm currently in my final year of Master's in Computer Science at University of California Davis.</p>
-            <p class="intro-p">Originally from Bangalore, I have about 3 years of industry experience after my undergrad in CS. I have worked at Oracle on its Fusion Technologies and rigorously executed project and client goals.</p>
-            <p class="intro-p">I enjoy coding especially when it's with loads of data. I'm experienced in developing and designing solutions that are efficient in execution, thorough in analysis and robust from a security standpoint.</p>
-            <!-- <span class="intro-p job-pls">I'm currently looking for full-time roles to start after my graduation in June 2024!</span> -->
+            <p class="intro-p">I'm doing research in Internet Measurement under  <a href="https://www.gamero-garrido.com/" target="_blank">Alex Gamero-Garrido</a>  at <a href="https://www.gamero-garrido.com/imply-lab" target="_blank">ImplyLab</a>. Internet Measurement is a field I discovered when I took a course during my Master's at UC Davis. It focuses on understanding how the internet actually behaves at scale, exposing how much of modern life rests on a system whose inner workings remain surprisingly opaque.</p>
+            <p class="intro-p">What draws me to research is the ownership it offers. I get to find problems that matter to me, gather the right resources, and bring in the right people to solve them. This carries me through the full arc of identifying what’s broken, exploring how to fix it, and understanding the impact of my solution.</p>
+            <p class="intro-p">All of this relies on a ton of measurement datasets, and working with data happens to be something I find genuinely rewarding. My background at Oracle as an Analyst helped me build the mindset of looking at numbers in a way that drives real outcomes.</p>
           </div>
         </div>
-        <div class="skills">
-          <h4>Skills</h4>
+        <div class="research-topics">
+          <h4>Research Topics</h4>
           <div class="content">
-            <div class="skill-category">
-              <strong>Languages I code in: &nbsp;</strong>
-              <span>C, C++, Java, Python, SQL and PL/SQL, HTML5, JavaScript, TypeScript, CSS</span>
+            <div class="research-item">
+              <span class="research-title">Digital Divide &amp; Internet Access</span>
+              <p class="intro-p">My primary research investigates internet access disparities in the U.S. through a <strong>socio-economic</strong> lens. Despite significant technological progress, substantial gaps in internet quality persist across neighborhoods — gaps that are usually chalked up to infrastructure investment, but rarely examined with much <em>demographic nuance or geographic precision</em> beyond urban vs. rural.</p>
+              <p class="intro-p">My work fills that gap by stratifying urban areas by population density and using <a href="https://www.speedtest.net/" target="_blank">Ookla's crowdsourced speed tests</a> for their broad coverage. I tackle the sampling biases inherent to crowdsourced data and apply regression models over temporal datasets to surface trends that hold. The takeaway: <strong>internet inequality is locally configured</strong> — there's no single national narrative, and effective policy needs region-specific intervention.</p>
+              <p class="intro-p">This work is done in collaboration with <a href="https://ebelding.cs.ucsb.edu/" target="_blank">Prof. Elizabeth Belding</a> at UC Santa Barbara.</p>
+              <p class="intro-p"><a href="http://arxiv.org/abs/2605.30809" target="_blank">Read the full paper here.</a></p>
             </div>
-            <div class="skill-category">
-              <strong>Tools I'm comfortable with: &nbsp;</strong>
-              <span>Git & Github, Command Line, REST, SOAP, Kubernetes, DevOps, BIP, OTBI, OIC</span>
+            <div class="research-item">
+              <span class="research-title">Application-Level Performance</span>
+              <p class="intro-p">While my main research deals with answering <em>”who gets what quality of internet”</em>, another line of research investigates <em>”what those speeds actually translate to in practice”</em>. I am collaborating with my teammates to examine how application-level performance for web browsing and video streaming varies with respect to <a href=”https://www.speedtest.net/” target=”_blank”>Ookla</a> measurements — identifying when such measurements are reliable predictors of user experience and at what point they stop mattering.</p>
+              <p class="intro-p">As part of this effort, I am leading the collection and analysis of <strong>YouTube and YouTube Shorts</strong> performance metrics to evaluate how these indicators respond to varying network conditions. This work seeks to bridge the gap between <em>network-level measurements</em> and <em>real-world application performance</em>, offering a more user-centric understanding of internet quality.</p>
+              <p class="intro-p">This work is done in collaboration with Humaira Fasih Ahmed Hashmi at UC Davis.</p>
+            </div>
+            <div class="research-item">
+              <span class="research-title">Web Infrastructure Security</span>
+              <p class="intro-p">My secondary interests lie in the security and privacy of internet infrastructure. Public services increasingly live on the web, and citizens depend on these sites for essential tasks — often with no practical alternative. The central concerns are:</p>
+              <ul class="research-concerns">
+                <li>who can observe or process data in transit</li>
+                <li>where it is routed and stored</li>
+                <li>which <em>jurisdiction</em> governs it</li>
+                <li>which networks or facilities actually operate the service</li>
+              </ul>
+              <p class="intro-p">Our goal is to produce a rigorously measured, <strong>state-wise map of hosting strategies and security posture</strong> across U.S. state and federal websites, with explicit accounting of <em>sovereignty</em> and third-party vendor dependence.</p>
+              <p class="intro-p">This work is done in collaboration with <a href="https://thisissachin.xyz/" target="_blank">Sachin Kumar Singh</a> at University of Utah.</p>
+            </div>
+            <div class="research-item">
+              <span class="research-title">Reverse-geolocating Community Anchor Institutions</span>
+              <p class="intro-p">Measuring the quality of connectivity of libraries, schools, and hospitals at scale is difficult because their IP addresses aren't documented anywhere. This work presents Reverse IP Geolocation (RG), a framework that infers IP addresses from publicly known institutional street addresses, validating candidates against DNS records, WHOIS data, broadband provider data, and active measurements.</p>
+              <p class="intro-p">My contribution in this project focused on validating that the dataset was <strong>geographically representative</strong> — examining whether coverage held consistently across urban and rural areas and across individual states for the method to be applicable across the country.</p>
+              <p class="intro-p">This work is done in collaboration with Nishant Acharya at UC Davis.</p>
+              <p class="intro-p"><a href="https://arxiv.org/abs/2605.30791" target="_blank">Read the pre-print here.</a></p>
             </div>
           </div>
-        </div>
-        <div class="education">
-          <h4>Education</h4>
-          <div class="content">
-            <div class="university"><a href="https://www.ucdavis.edu" target="_blank">University of California Davis</a></div>
-            <div class="college"><a href="https://cs.ucdavis.edu" target="_blank">Graduate Studies in Computer Science</a></div>
-            <div class="conc"><strong>Relevant Coursework:</strong> Design and Analysis of Algorithms, Distributed Database Systems, Machine Learning and Discovery, Software Engineering, Topics in Network Security and Privacy, Operating Systems, Computer Architecture, Research and Teaching in Computer Science</div>
-            <!-- <div class="grad-date">Current GPA: 3.91 &emsp; Expected Graduation: June 2024</div> -->
-            <div class="grad-date">Current GPA: 3.91</div>
-            <br>
-            <div class="university"><a href="https://sdmcet.ac.in" target="_blank">SDM College of Engineering and Technology</a></div>
-            <div class="college"><a href="https://sdmcet.ac.in/ug/computer-science-engineering/" target="_blank">Undergrad in Computer Science</a></div>
-            <div class="conc"><strong>Relevant Coursework:</strong> Computer Networks, Advanced Data Structures, Advanced OOP, Advanced Computer Architecture, Big Data Analytics, Cryptography and Network Security, Data warehousing and Mining</div>
-            <!-- <div class="grad-date">GPA: 4.0 &emsp; Class of 2019</div> -->
-            <div class="grad-date">GPA: 4.0</div>
-          </div>
-          
         </div>
         <div class="experience">
           <h4>Experience</h4>
           <div class="content">
-            <!-- Add your experience details here -->
             <div class="exp-item">
               <div class="job">
-                <a class="company" href="https://www.oracle.com/erp/" target="_blank">Oracle</a>
-                <div class="duration">Aug 2019 &mdash; May 2022 ~ 3 years</div>
+                <a class="company" href="https://www.oracle.com" target="_blank">Oracle</a>
+                <span class="duration">Aug 2019 &mdash; May 2022 &middot; Bengaluru, India</span>
               </div>
-              <div>
-                <div class="title">Cloud Analyst<span class="duration2">13 months</span></div>
-                <ul class="description">
-                  <li>As part of <a href="https://www.oracle.com/consulting/" target=”_blank”><u>Global Service Delivery</u></a> team, worked on <a href="https://www.oracle.com/consulting/erp/" target=”_blank”><u>ERP</u></a> division of Oracle Fusion Applications</li>
-                  <li>Created customer-facing reports <a href="https://www.oracle.com/middleware/technologies/analytics-publisher.html" target=”_blank”><u>Business Intelligence Publisher (BIP)</u></a> for various financial transactions from Purchase Orders to Receipts</li>
-                  <li>Customized complex seeded reports in SQL</li>
-                  <li>Extensively worked on bursting BI Reports, creating and scheduling <a href="https://docs.oracle.com/middleware/11119/ess/develop/intro.htm" target="_blank"><u>ESS</u></a> jobs</li>
-                </ul>
-                <div class="title">Senior Cloud Analyst<span class="duration2">17 months</span></div>
-                <ul class="description">
-                  <li>Developed dataflows among various source points through <a href="https://www.oracle.com/integration/application-integration/#:~:text=Oracle%20Integration%20gives%20you%20a,dashboards%20directly%20in%20your%20applications." target="_blank"><u>Inbound and Outbound Integrations</u></a></li>
-                  <li>Exhaustively explored <a href="https://docs.oracle.com/en/cloud/saas/financials/23c/farfa/index.html" target="_blank"><u>Fusion's REST and SOAP</u></a> services for Reports and Integrations</li>
-                  <li>Worked with Oracle's web services, API's and <a href="https://docs.oracle.com/en/cloud/saas/financials/23c/oefbf/external-data-integration-services-for-importing-data.html#u30005887" target="_blank"><u>FBDI</u></a> templates to automate data collection and exchange in JSON</li>
-                  <li>Revised multiple project deliverables focusing on code re-usability</li>
-                </ul>
-                <div class="title">Cloud Engineer<span class="duration2">3 months</span></div>
-                <ul class="description">
-                  <li>Worked on <a href="https://www.oracle.com/integration/" target="_blank"><u>Oracle Integration Cloud (OIC)</u></a> and gained expertise in functional modules of <a href="https://www.oracle.com/erp/erp-modules/" target="_blank"><u>ERP</u></a>- Financials, Chart of Accounts, Project Portfolio, Inventory and Supply Chain Management.</li>
-                  <li>Lead the campus-to-corporate initiative program, and mentored new hires - Class of 2020 and 2021</li>
-                </ul>
+      
+                <p class="intro-p">As part of <a href="https://www.oracle.com/consulting/" target="_blank">Global Service Delivery</a> team in Oracle Consulting, I worked on Fusion Applications, Oracle's cloud software suite used by organizations to manage core business functions such as finance, procurement, and project management. My role involved supporting the implementation and customization of these <a href="https://www.oracle.com/consulting/erp/" target="_blank">ERP</a> solutions for enterprise clients.</p>
+                
+                <div class="exp-roles">
+
+                  <div class="title">Cloud Analyst</div>
+                  <ul class="description">
+                    <li>Developed a deep understanding of how data is structured and stored across a large enterprise system, working extensively with relational database tables and learning how individual business modules connect, and how they are maintained. Example - <a href="https://docs.oracle.com/en/cloud/saas/financials/26b/api.html" target="_blank">Enterprise Financial System APIs and Schema</a></li>
+                    <li>Wrote SQL queries against this database to update, extract, aggregate, and detail records, optimizing each query for efficiency and reusability. Tool used - <a href="https://www.oracle.com/middleware/technologies/analytics-publisher.html" target="_blank">BIP</a></li>
+                  </ul>                  
+                
+                  <div class="title">Senior Cloud Analyst</div>
+                  <ul class="description">
+                    <li>Built data pipelines that moved business records such as invoices and purchase orders between client systems and Oracle's cloud software, customizing each integration to fit the client's existing infrastructure.  <a href="https://www.oracle.com/integration/" target="_blank">Oracle Integration Cloud</a></li>
+                    <li>Handled extensive data cleaning, transformation, and maintenance to ensure reliable, accurate exchange across systems</li>
+                    <li>Designed and scheduled data transfer jobs around each system's update frequency, a task that grew increasingly complex as the underlying databases scaled. Tool used - <a href="https://docs.oracle.com/middleware/11119/ess/develop/intro.htm" target="_blank">ESS</a></li>
+                  </ul>
+
+                  <div class="title">Cloud Consultant</div>
+                  <ul class="description">
+                    <li>Translated client business requirements into technical specifications and delivered solutions to meet them</li>
+                    <li>Partnered with clients to refine their requirements where small adjustments could yield significant gains in technical efficiency, maximizing overall impact</li>
+                    <li>Lead the campus-to-corporate initiative program, and mentored new hires - Class of 2020 and 2021</li>
+                  </ul>
+
               </div>
             </div>
           </div>
         </div>
-        <div class="projects">
-          <h4>Projects</h4>
+        <div class="education">
+          <h4>Education and Projects</h4>
           <div class="content">
-            <div class="project-item">
-              <a class="project-title" href="https://github.com/shivani-k/riscv-console" target="_blank">Custom Operating System and Snake Game</a>
-              <p class="project-desc">Built a custom operating system from scratch on a hypothetical RISC-V based game console. Developed a snake game to work with the developed firmware. Developed multiple APIs for other game developers to port their game into my firmware. These APIs included I/O Controller APIs, Timer based APIs, Thread Management, Graphics APIs and Memory Management APIs.</p>
+            <div class="edu-block">
+              <div class="edu-header">
+                <div class="university"><a href="https://www.ucdavis.edu" target="_blank">University of California Davis</a></div>
+                <span class="edu-date">2022 – Present &middot; Davis, California</span>
+              </div>
+              <div class="college"><a href="https://cs.ucdavis.edu" target="_blank">Masters and PhD in Computer Science</a></div>
+              <div class="edu-projects">
+                <div class="edu-projects-label">Projects</div>
+                <div class="project-item">
+                  <span class="project-title">A comparative study of Chrome and Firefox Extensions</span>
+                  <p class="project-desc">Leveraging Python and the ExtAnalysis core library, we examined which browser ecosystem enforces stronger security and stricter permissions. We analyzed manifest.json files across thousands of top extensions and used Fiddler to track, in real time, the third parties each one contacted.</p>
+                  <a class="gh-link" href="https://github.com/shivani-k/BrowserExtensionEcosystemAnalysis" target="_blank">View on GitHub →</a>
+                </div>
+                <div class="project-item">
+                  <span class="project-title">RISC-V Game Console</span>
+                  <p class="project-desc">Built a custom operating system for a RISC-V console, complete with a Snake game and a suite of APIs (I/O, timers, threading, graphics, and memory management) that let other developers port their own games onto the firmware.</p>
+                  <a class="gh-link" href="https://github.com/shivani-k/riscv-console" target="_blank">View on GitHub →</a>
+                </div>
+                <div class="project-item">
+                  <span class="project-title">Art Generation Using Speech</span>
+                  <p class="project-desc">Trained a ML model to generated abstract art from the emotion detected in speech, pairing VQGAN and CLIP as generator and perceptor. Compared effects of CNN, LSTM, and NLP-based speech recognition models on performance and accuracy.</p>
+                  <a class="gh-link" href="https://github.com/shivani-k/ML_ImageGeneration" target="_blank">View on GitHub →</a>
+                </div>
+              </div>
             </div>
-            <div class="project-item">
-              <a class="project-title" href="https://github.com/shivani-k/ML_ImageGeneration" target="_blank">Abstract Art Generation Using Speech Emotions</a>
-              <p class="project-desc">Used VQGAN and CLIP together as a generator and perceptor on Python Speech Recognition Models: CNN, NLP, LSTM and compared their performance</p>
-            </div>
-            <div class="project-item">
-              <a class="project-title" href="https://github.com/shivani-k/RadTok" target="_blank">RadTok</a>
-              <p class="project-desc">Using Radix blockchain technology RADTOK is a video streaming platform for fair compensation of content creators using the Radix ecosystem for Blockchain</p>
-            </div>
-            <div class="project-item">
-              <a class="project-title" href="https://github.com/shivani-k/BrowserExtensionEcosystemAnalysis" target="_blank">Browser Extension Ecosystem</a>
-              <p class="project-desc">Leveraging Python and the ExtAnalysis core library, this project extensively compared Chrome and Firefox extensions with AWS ECS hosting the pipeline. GraphQL enabled scalable analyses of manifest.json file permissions and domains, stored in DynamoDB. CloudWatch ensured monitoring and security, creating a robust platform for browser extension ecosystem analysis.</p>
-            </div>
-            <div class="project-item">
-              <a class="project-title">Handwriting to Text Conversion</a>
-              <p class="project-desc">Built in Android Studio using Google Vision API in Java for pharmacy maintenance and analysis using Linear Regression in Python</p>
+            <div class="edu-block">
+              <div class="edu-header">
+                <div class="university"><a href="https://sdmcet.ac.in" target="_blank">SDM College of Engineering and Technology</a></div>
+                <span class="edu-date">2015 – 2019 &middot; Dharwad, India</span>
+              </div>
+              <div class="college"><a href="https://sdmcet.ac.in/ug/computer-science-engineering/" target="_blank">Bachelors in Computer Science</a></div>
+              <div class="edu-projects">
+                <div class="edu-projects-label">Projects</div>
+                <div class="project-item">
+                  <span class="project-title">Handwriting to Text Conversion</span>
+                  <p class="project-desc">Designed a pharmacy database system with a handwriting-to-text tool, built on the Google Vision API in Android Studio, to support inventory maintenance, and applied Linear Regression in Python for analysis.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <a class="resume" href="./img/resume.pdf" target="_blank"><div class="resume-link">Grab a PDF of my full resume</div></a>
+        <a class="resume" href="./resources/resume.pdf" target="_blank"><div class="resume-link">Grab my resume</div></a>
         <br>
 
         <div class="contact_d">
-          <h5><span class="wave"> 👋</span></h5>
+          <h4>Get in touch</h4>
           <form action="https://formspree.io/f/xvojwybz" method="POST" id="myForm">
-            <div>
-              <label class="project-title" for="name">Name</label>
+            <div class="form-group">
+              <label for="name">Name</label>
               <input type="text" name="name" id="name"/>
             </div>
-            <div>
-              <label class="project-title" for="email">Email</label>
+            <div class="form-group">
+              <label for="email">Email</label>
               <input type="text" name="email" id="email" />
             </div>
-            <div>
-              <label class="project-title" for="message">Message</label>
-              <textarea name="message" id="message" rows="6" class="styled-textarea"></textarea>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="5"></textarea>
             </div>
-            <input type="submit" value="Send" class="styled-buttons3" />
+            <button type="submit" class="form-submit">Send</button>
           </form>
         </div>
       </div>
     </div>
+    <div class="right-panel">
+      <div class="right-panel-inner">
+        <h4>Recent Highlights</h4>
+        <div class="news-item">
+          <span class="news-date">May 2026</span>
+          <span class="news-topic">
+            <a href="https://arxiv.org/abs/2605.30791" target="_blank">Published pre-print on arXiv</a>
+          </span>
+          <p>Co-author: Where's Waldo Library? Using Reverse IP Geolocation to Identify Library IPs</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">May 2026</span>
+          <span class="news-topic">
+            <a 
+          href="http://arxiv.org/abs/2605.30809" 
+          target="_blank">Published pre-print on arXiv</a>
+          </span>
+          <p>Stratifying the Digital Divide: Analysis of Socio-Economic Influences on Internet
+            Performances</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">May 2026</span>
+          <span class="news-topic">
+            <a 
+          href="https://tma.ifip.org/2026/" 
+          target="_blank">Network Traffic Measurement and Analysis Conference PhD School - Delft, Netherlands</a>
+          </span>
+          <p>My poster "Stratifying the Digital Divide: Analysis of Socio-Economic Influences on Internet
+            Performances" got accepted.</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">Oct 2025</span>
+          <span class="news-topic">
+            <a 
+          href="https://conferences.sigcomm.org/imc/2025/events/student-workshop/" 
+          target="_blank">Internet Measurement Conference (IMC) Student Workshop - Madison, Wisconsin</a>
+          </span>
+          <p>Presented my research on "A Socio-Economic Analysis of Internet Access"</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <script>
-    // Get references to the button and the form
-    const showFormButton = document.getElementById('showFormButton');
-    const myForm = document.getElementById('myForm');
-
-    // Add a click event listener to the button
-    showFormButton.addEventListener('click', function() {
-      // Toggle the form's visibility
-      if (myForm.style.display === 'none') {
-        myForm.style.display = 'block';
-      } else {
-        myForm.style.display = 'none';
-      }
-    });
-</script>
 </body>
+</html>
