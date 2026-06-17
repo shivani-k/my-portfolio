@@ -1,3 +1,7 @@
+/* * {
+  outline: 1px solid red;
+} */
+
 html, body {
   margin: 0;
   padding: 0;
@@ -134,9 +138,10 @@ a {
     flex-direction: row;
     align-items: center;
     padding: 20px 24px;
+    box-sizing: border-box;
     background: #1a1a1a;
     margin-bottom: 20px;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
   }
   .left .bg-img {
     position: relative;
@@ -205,11 +210,8 @@ a {
   .left-inner,
   .right-inner {
     padding: 50px 20px;
-    padding-top: 80px;
   }
-  .right .introduction {
-    margin-top: 40px;
-  }
+
   .right .experience .exp-item .job {
     flex-direction: column;
     align-items: flex-start;
